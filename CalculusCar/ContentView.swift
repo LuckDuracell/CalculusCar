@@ -11,9 +11,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    //ignore this, this is to dismiss the keyboard
+    //ignore this, this is to dismiss the keyboard, check whether the user is in dark or light mode, and include the diagram toggle
     @FocusState var showKeyboard: Bool
-    
+    @Environment(\.colorScheme) var colorScheme
+    @State var showDiagram: Bool = false
     
     //defining the global variables that the user interacts with:
     
@@ -134,7 +135,7 @@ struct ContentView: View {
                     CleanTextField(title: "Known Side", given: "ex: 20 ft", num: $knownSide)
                     CleanTextField(title: "Known Pos: X", given: "ex: 23 ft", num: $knownPos.0)
                     CleanTextField(title: "Known Pos: Y", given: "ex: 4 ft", num: $knownPos.1)
-                    CleanTextField(title: "Known X Rate: dx/dt", given: "m/s", num: $knownRateX)
+                    CleanTextField(title: "Known X Rate: dx/dt", given: "ex: 2 f/s", num: $knownRateX)
                 }
                 .focused($showKeyboard)
                 .toolbar(content: {
@@ -145,6 +146,16 @@ struct ContentView: View {
                         } label: {
                             Text("Done")
                         } .offset(x: UIScreen.main.bounds.width * 0.35)
+                    })
+                    
+                    ToolbarItemGroup(placement: .navigationBarTrailing, content: {
+                        Button {
+                            withAnimation {
+                                showDiagram.toggle()
+                            }
+                        } label: {
+                            Image(systemName: "doc.text.image.fill")
+                        }
                     })
                 })
                 
@@ -162,8 +173,32 @@ struct ContentView: View {
                 } .padding()
                 
                 
+                
             } .navigationTitle("Rate of Z")
             .padding()
+            .overlay(content: {
+                //image of graph
+                ZStack {
+                    Color.gray.opacity(0.01)
+                        .edgesIgnoringSafeArea(.all)
+                    VStack {
+                        Spacer()
+                        Image(colorScheme == .dark ? "Z Graph" : "Z Graph Light")
+                            .resizable()
+                            .scaledToFit()
+                        Spacer()
+                        Spacer()
+                    }
+                }
+                .background(.thinMaterial.opacity(0.9))
+                .onTapGesture {
+                    withAnimation {
+                        showDiagram = false
+                    }
+                }
+                .opacity(showDiagram ? 1 : 0)
+                .disabled(showDiagram ? false : true)
+            })
         }
     }
 }

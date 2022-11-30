@@ -34,14 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AAEF9702935C20D0030380C /* CalculusCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculusCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AAEF9702935C20D0030380C /* Related Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Related Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAEF9732935C20D0030380C /* CalculusCarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculusCarApp.swift; sourceTree = "<group>"; };
 		0AAEF9752935C20D0030380C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AAEF9772935C2100030380C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AAEF97A2935C2100030380C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0AAEF9802935C2100030380C /* CalculusCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculusCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AAEF9802935C2100030380C /* Related CalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Related CalcTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAEF9842935C2100030380C /* CalculusCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculusCarTests.swift; sourceTree = "<group>"; };
-		0AAEF98A2935C2100030380C /* CalculusCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculusCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AAEF98A2935C2100030380C /* Related CalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Related CalcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAEF98E2935C2100030380C /* CalculusCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculusCarUITests.swift; sourceTree = "<group>"; };
 		0AAEF9902935C2100030380C /* CalculusCarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculusCarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,9 +84,9 @@
 		0AAEF9712935C20D0030380C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AAEF9702935C20D0030380C /* CalculusCar.app */,
-				0AAEF9802935C2100030380C /* CalculusCarTests.xctest */,
-				0AAEF98A2935C2100030380C /* CalculusCarUITests.xctest */,
+				0AAEF9702935C20D0030380C /* Related Calc.app */,
+				0AAEF9802935C2100030380C /* Related CalcTests.xctest */,
+				0AAEF98A2935C2100030380C /* Related CalcUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0AAEF96F2935C20D0030380C /* CalculusCar */ = {
+		0AAEF96F2935C20D0030380C /* Related Calc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AAEF9942935C2100030380C /* Build configuration list for PBXNativeTarget "CalculusCar" */;
+			buildConfigurationList = 0AAEF9942935C2100030380C /* Build configuration list for PBXNativeTarget "Related Calc" */;
 			buildPhases = (
 				0AAEF96C2935C20D0030380C /* Sources */,
 				0AAEF96D2935C20D0030380C /* Frameworks */,
@@ -142,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = CalculusCar;
+			name = "Related Calc";
 			productName = CalculusCar;
-			productReference = 0AAEF9702935C20D0030380C /* CalculusCar.app */;
+			productReference = 0AAEF9702935C20D0030380C /* Related Calc.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0AAEF97F2935C2100030380C /* CalculusCarTests */ = {
+		0AAEF97F2935C2100030380C /* Related CalcTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AAEF9972935C2100030380C /* Build configuration list for PBXNativeTarget "CalculusCarTests" */;
+			buildConfigurationList = 0AAEF9972935C2100030380C /* Build configuration list for PBXNativeTarget "Related CalcTests" */;
 			buildPhases = (
 				0AAEF97C2935C2100030380C /* Sources */,
 				0AAEF97D2935C2100030380C /* Frameworks */,
@@ -160,14 +160,14 @@
 			dependencies = (
 				0AAEF9822935C2100030380C /* PBXTargetDependency */,
 			);
-			name = CalculusCarTests;
+			name = "Related CalcTests";
 			productName = CalculusCarTests;
-			productReference = 0AAEF9802935C2100030380C /* CalculusCarTests.xctest */;
+			productReference = 0AAEF9802935C2100030380C /* Related CalcTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0AAEF9892935C2100030380C /* CalculusCarUITests */ = {
+		0AAEF9892935C2100030380C /* Related CalcUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AAEF99A2935C2100030380C /* Build configuration list for PBXNativeTarget "CalculusCarUITests" */;
+			buildConfigurationList = 0AAEF99A2935C2100030380C /* Build configuration list for PBXNativeTarget "Related CalcUITests" */;
 			buildPhases = (
 				0AAEF9862935C2100030380C /* Sources */,
 				0AAEF9872935C2100030380C /* Frameworks */,
@@ -178,9 +178,9 @@
 			dependencies = (
 				0AAEF98C2935C2100030380C /* PBXTargetDependency */,
 			);
-			name = CalculusCarUITests;
+			name = "Related CalcUITests";
 			productName = CalculusCarUITests;
-			productReference = 0AAEF98A2935C2100030380C /* CalculusCarUITests.xctest */;
+			productReference = 0AAEF98A2935C2100030380C /* Related CalcUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0AAEF96B2935C20D0030380C /* Build configuration list for PBXProject "CalculusCar" */;
+			buildConfigurationList = 0AAEF96B2935C20D0030380C /* Build configuration list for PBXProject "Related Calc" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +219,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AAEF96F2935C20D0030380C /* CalculusCar */,
-				0AAEF97F2935C2100030380C /* CalculusCarTests */,
-				0AAEF9892935C2100030380C /* CalculusCarUITests */,
+				0AAEF96F2935C20D0030380C /* Related Calc */,
+				0AAEF97F2935C2100030380C /* Related CalcTests */,
+				0AAEF9892935C2100030380C /* Related CalcUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,12 +284,12 @@
 /* Begin PBXTargetDependency section */
 		0AAEF9822935C2100030380C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0AAEF96F2935C20D0030380C /* CalculusCar */;
+			target = 0AAEF96F2935C20D0030380C /* Related Calc */;
 			targetProxy = 0AAEF9812935C2100030380C /* PBXContainerItemProxy */;
 		};
 		0AAEF98C2935C2100030380C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0AAEF96F2935C20D0030380C /* CalculusCar */;
+			target = 0AAEF96F2935C20D0030380C /* Related Calc */;
 			targetProxy = 0AAEF98B2935C2100030380C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -485,7 +485,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalculusCar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CalculusCar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Related Calc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Related Calc";
 			};
 			name = Debug;
 		};
@@ -505,7 +505,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalculusCar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CalculusCar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Related Calc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Related Calc";
 			};
 			name = Release;
 		};
@@ -548,7 +548,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AAEF96B2935C20D0030380C /* Build configuration list for PBXProject "CalculusCar" */ = {
+		0AAEF96B2935C20D0030380C /* Build configuration list for PBXProject "Related Calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AAEF9922935C2100030380C /* Debug */,
@@ -557,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AAEF9942935C2100030380C /* Build configuration list for PBXNativeTarget "CalculusCar" */ = {
+		0AAEF9942935C2100030380C /* Build configuration list for PBXNativeTarget "Related Calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AAEF9952935C2100030380C /* Debug */,
@@ -566,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AAEF9972935C2100030380C /* Build configuration list for PBXNativeTarget "CalculusCarTests" */ = {
+		0AAEF9972935C2100030380C /* Build configuration list for PBXNativeTarget "Related CalcTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AAEF9982935C2100030380C /* Debug */,
@@ -575,7 +575,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AAEF99A2935C2100030380C /* Build configuration list for PBXNativeTarget "CalculusCarUITests" */ = {
+		0AAEF99A2935C2100030380C /* Build configuration list for PBXNativeTarget "Related CalcUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AAEF99B2935C2100030380C /* Debug */,
