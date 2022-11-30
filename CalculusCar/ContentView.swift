@@ -30,7 +30,7 @@ struct ContentView: View {
     //-----------------------------------------------------------
     
     
-    // The four following functions contain all of our calculations, broken up into four chunks called calculateC(), calculateAngle(), calculateZ(), rateOfY(), and rateOfZ(). These follow the neccessary steps from our original problem
+    // The five following functions contain all of our calculations, broken up into four chunks called calculateC(), calculateAngle(), calculateZ(), rateOfY(), and rateOfZ(). These follow the neccessary steps from our original problem
     //P.S. calculateC() is not really neccesary, since in our problem that value is given (it's the circle's radius), but in other cases it may not be, so we will include it
     
     func calculateC() -> Double {
