@@ -165,6 +165,8 @@ struct ContentView: View {
                         display.0 = calculateZ()
                         display.1 = rateOfZ()
                     }
+                    //The answer will give you the rate at which your distance is changing per second in the instance of time of the given values
+                    //In the original problems case, the distance of the car from the origin is changing at 1.713 ft/s, when the car's x-axis position is changing at 2ft/s & and the car is at (23, 4) following a circle with a radius of 5's perimeter
                 } label: {
                     Text("Calculate")
                         .padding()
