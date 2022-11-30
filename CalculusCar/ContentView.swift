@@ -186,6 +186,7 @@ struct ContentView: View {
                         Image(colorScheme == .dark ? "Z Graph" : "Z Graph Light")
                             .resizable()
                             .scaledToFit()
+                            .padding()
                         Spacer()
                         Spacer()
                     }
