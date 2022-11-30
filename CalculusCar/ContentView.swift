@@ -11,6 +11,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    //ignore this, this is to dismiss the keyboard
+    @FocusState var showKeyboard: Bool
+    
     
     //defining the global variables that the user interacts with:
     
@@ -114,7 +117,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ScrollView() {
                 
                 //Displays two final values it solves for:
@@ -133,6 +136,17 @@ struct ContentView: View {
                     CleanTextField(title: "Known Pos: Y", given: "ex: 4 ft", num: $knownPos.1)
                     CleanTextField(title: "Known X Rate: dx/dt", given: "m/s", num: $knownRateX)
                 }
+                .focused($showKeyboard)
+                .toolbar(content: {
+                    //this is the done button that sits on the keyboard so that it can be dismissed
+                    ToolbarItemGroup(placement: .keyboard, content: {
+                        Button {
+                            showKeyboard.toggle()
+                        } label: {
+                            Text("Done")
+                        } .offset(x: UIScreen.main.bounds.width * 0.35)
+                    })
+                })
                 
                 //this button calls the two general functions and sets the display at the top to show them
                 Button {
